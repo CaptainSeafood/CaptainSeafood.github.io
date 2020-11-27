@@ -1,18 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>JDKim</title>
     <link
       rel="icon"
       href="https://cdn.glitch.com/37c51230-a894-46df-979f-c906b4332e7c%2F159556523653479687%20(2).png?v=1601951454601"
     />
-    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/style.css" />
     <script src="/script.js" defer></script>
-  </head>  
+  </head>
   <body>
+    <!-- Custom Alerts  -->
+    <div id="background" onclick="none()">&nbsp;</div>
+    <div id="customAlert">
+      <h1 id="alertTitle"></h1>
+      <button id="alertOK">OK</button>
+    </div>
+    <!-- Content -->
+    <div id="navbar">
+      <button  class="tab"  id="notesBtn" onclick="home()">Notes</button
+      ><button class="tab" id="issuesBtn" onclick="issues()">Issues</button
+      ><button class="tab" id="featuresBtn" onclick="features()">Features</button
+      ><button class="tab" id="forumBtn" onclick="suggestions()">Forum</button
+      ><button class="tab" id="licenceBtn" onclick="licence()">Licences</button
+      ><button class="tab" id="settingsBtn" onclick="settings()">Settings</button>
+    </div>
     Website still in progress
   </body>
 </html>
