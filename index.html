@@ -14,12 +14,176 @@
   </head>
   <body>
     <!-- Custom Alerts  -->
+    <div onclick="none()" id="closeBackground">&#10005;</div>
     <div id="background" onclick="none()">&nbsp;</div>
     <div id="customAlert">
       <h1 id="alertTitle"></h1>
       <button id="alertOK">OK</button>
     </div>
     <!-- Content -->
+    <div id="NavbarNotifications">
+      <h1 id="pageHeader">JD Kim</h1>
+      <button class="tab" id="aboutBtn" onclick="about()">About</button
+      ><button class="tab" id="projectsBtn" onclick="projects()">
+        Projects</button
+      ><button class="tab" id="organizationsBtn" onclick="organizations()">
+        Organizations</button
+      ><button class="tab" id="blogBtn" onclick="blog()">Blog</button
+      ><button class="tab" id="contactBtn" onclick="contact()">Contact</button
+      ><button class="tab" id="settingsBtn" onclick="settings()">
+        Settings
+      </button>
+      <div class="notification2" id="one">
+        This website is still changing everyday.
+        <span class="close" onclick="closeN()">&#10006;</span>
+      </div>
+      <div class="notification" id="two">
+        You can now use ?tab=tabname to stay on the tab on a reload only.
+        <span class="close" onclick="closeN2()">&#10006;</span>
+      </div>
+      <div class="notification2" id="three">
+        Welcome!
+        <span class="close" onclick="closeN3()">&#10006; </span>
+      </div>
+    </div>
+    <!-- Default -->
+    <div id="default">
+      <h1><bold>Hi, I'm JD. </bold></h1>
+    </div>
+    <!-- About -->
+    <div class="hidden" id="about">
+<!--       <h1>ABOUT</h1> -->
+      <img
+        id="selfPic"
+        title="Contact me see the uncensored version."
+        src="https://cdn.glitch.com/e520a46b-d434-48fd-a9f2-390bdf316f0e%2Fdownload%20(4).png?v=1606522467318"
+      />
+<!--       <p id="aboutText">
+        I am a <span class="noSee">00</span> kid living in Kirkland, Washington. I speak Korean and American.
+      </p> -->
+        <div class="about_section">
+          <div class="about_header">Gender</div>
+          <div class="about_body">
+            Male (He, Him)
+          </div>
+        </div>
+        <div class="about_section">
+          <div class="about_header">Religion</div>
+          <div class="about_body">
+            Christianity
+          </div>
+        </div>
+        <div class="about_section">
+          <div class="about_header">Ancestory Origins</div>
+          <div class="about_body">
+            Korea
+          </div>
+        </div>
+        <div class="about_section">
+          <div class="about_header">Spoken Languages</div>
+          <div class="about_body">
+            English, Korean
+          </div>
+        </div>
+        <div class="about_section">
+          <div class="about_header">Programming Languages</div>
+          <div class="about_body">
+            Python, HTML, CSS, JS
+          </div>
+        </div>
+        <div class="about_section">
+          <div class="about_header">Favorite Author</div>
+          <div class="about_body">
+            Stuart Gibbs
+          </div>
+        </div>
+        
+        <div class="about_section">
+          <div class="about_header">Most Favorite Book Ever</div>
+          <div class="about_body">
+            Ready Player One
+          </div>
+        </div>
+        
+        <div class="about_section">
+          <div class="about_header">Location</div>
+          <div class="about_body">
+            Washington
+          </div>
+        </div>
+        
+        <div class="about_section">
+          <div class="about_header">Current School</div>
+          <div class="about_body">
+            Kamiakin Middle School
+          </div>
+        </div>
+        
+        <div class="about_section">
+          <div class="about_header">Current Instruments</div>
+          <div class="about_body">
+            Violin, Piano, Trumpet
+          </div>
+        </div>
+        
+        <div class="about_section">
+          <div class="about_header">Favorite Quote</div>
+          <div class="about_body">
+            <div class="quote_body">
+              	"The people who are crazy enough to think they can change the world
+              are the ones who do."
+            </div>
+          </div>
+        </div>
+        
+        <div class="about_section">
+          <div class="about_header">Favorite YouTube Channels</div>
+          <div class="about_body">
+            Mark Rober, Daily Dose of Internet, Coding Addict, Chris Ramsay
+          </div>
+        </div>
+        
+        <div class="about_section">
+          <div class="about_header">Friendliness</div>
+          <div class="about_body">
+            Take some time and you're set
+          </div>
+        </div>
+        
+        <div class="about_section">
+          <div class="about_header">Agreebleness</div>
+          <div class="about_body">
+            Kind of Stubborn
+          </div>
+        </div>        
+    </div>
+    <!-- Projects -->
+    <div class="hidden" id="projects"><br />Projects</div>
+    <!-- Organizations -->
+    <div class="hidden" id="organizations">
+      <h1>This page is still being built.</h1>
+<!--       <p>I have founded two organizations</p> -->
+    </div>
+    <!-- Blog -->
+    <div class="hidden" id="blog">
+      <iframe src="https://jdkim711.simplesite.com"></iframe>
+    </div>
+    <!-- Contact -->
+    <div class="hidden" id="contact">
+      <iframe src="https://form.123formbuilder.com/5737222/form"></iframe>
+    </div>
+    <!-- Settings -->
+    <div class="hidden" id="settings">
+      <h1>Settings</h1>
+      <button onclick="showNot()" class="half" id="showNotBtn">
+        Show Notifications</button
+      ><button onclick="clearNot()" class="half" id="hideNotBtn">
+        Clear Notifications
+      </button>
+      <br /><br />
+      <button class="settingsOK" onclick="closeSettings()">Close</button>
+    </div>
+
     <div id="navbar">
       <button  class="tab"  id="notesBtn" onclick="home()">Notes</button
       ><button class="tab" id="issuesBtn" onclick="issues()">Issues</button
